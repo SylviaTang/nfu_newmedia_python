@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/pickcity'>
+<table>
+<th colspan="2">请填写机场名称：</th>
+<tr><td>起始机场: </td><td><input type="text" name="user_placeofdeparture" /></td></tr>
+<tr><td>目的机场: </td><td><input type="text" name="user_destination" /></td></tr>
+</table>
+<p>准备就绪后, 单击此按钮：</p>
+<p><input value='查询！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
