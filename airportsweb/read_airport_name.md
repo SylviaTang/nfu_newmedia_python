@@ -11,5 +11,3 @@ read_airport_name.md
 # 例子
 >>> ZSYT,medium_airport,Yantai Laishan Airport,"37.40169907, 121.3720016",59,AS,CN,CN-37,Yantai,ZSYT,YNT,
 
-
-
