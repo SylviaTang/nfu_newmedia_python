@@ -16,6 +16,7 @@ airportsweb.py
 * [opencv](http://opencv.org/)
 ### 数据
 * [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
+* [机场数据](https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv)
 ### API
 无
 
