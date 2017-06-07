@@ -14,6 +14,7 @@ airportsweb.py
 ### 模块
 * [folium](https://github.com/python-visualization/folium)
 * [opencv](http://opencv.org/)
+* [json](http://www.json.org/)
 ### 数据
 * [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
 * [世界机场数据](https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv)
