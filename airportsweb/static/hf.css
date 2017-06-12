@@ -1,7 +1,9 @@
 body {
   font-family:      Verdana, Geneva, Arial, sans-serif;
-  font-size:        medium;
-  background-color: #A0A0A0;
+  font-size:        150%;
+  background:       url(jc3.jpg) center center;
+  color:            white;
+  background-size:  cover;
   margin-top:       5%;
   margin-bottom:    5%;
   margin-left:      10%;
@@ -19,7 +21,7 @@ a img {
   border:           0;
 }
 h2 {
-  font-size:        150%;
+  font-size:        180%;
 }
 table {
   margin-left:      20px;
@@ -30,17 +32,6 @@ table {
 td, th {
   padding:          5px;
   text-align:       left;
-}
-.copyright {
-  font-size:        75%;
-  font-style:       italic;
-}
-.slogan {
-  font-size:        75%;
-  font-style:       italic;
-}
-.confirmentry {
-  font-weight:      600; 
 }
 
 /*** Tables ***/
