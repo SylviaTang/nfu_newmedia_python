@@ -38,9 +38,10 @@ td, th {
 
 table {
 font-size:          1em;
-background-color:   #A0A0A0;
-border:             1px solid #909090;
-color:              #2a2a2a;
+background-color:   transparent;
+border:             2px solid #ffffff;
+border-style:       ridge;
+color:              #ffffff;
 padding:            5px 5px 2px;
 border-collapse:    collapse;
 }
@@ -51,7 +52,7 @@ border:             thin dotted gray;
 
 /*** Inputs ***/
 input[type=text] {
-  font-size:        115%;
+  font-size:        100%;
   width:            30em;
 }
 input[type=submit] {
