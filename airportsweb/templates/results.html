@@ -11,6 +11,53 @@
 <tr><td>里程: </td><td>{{ the_airporttwo }}</td></tr>
 </table>
 
+ content=eval(input()) 
+    function initialize() { 
+    var myOP = { zoom: 4, center: new cn_airport_name.LatLng(38.65119833229951, 104.073486328125), mapTypeId:cn_airport_name.MapTypeId.ROADMAP, mapTypeControlOptions: { position:cn_airport_name.ControlPosition.RIGHT_TOP } } 
+    map = cn_airport_name.Map(document.getElementById("div_map"), myOP); 
+    geocoder = new cn_airport_name.Geocoder(); 
+    infowindow = new cn_airport_name.InfoWindow(); 
+    poly =new cn_airport_name.Polyline({ strokeColor: "#5bc210", strokeOpacity: 1.0, strokeWeight: 2 }); 
+    poly.setMap(map) 
+    hideID("ajax_msg"); 
+    
+   +function clearLatLng() { 
+   + b_poly = true; 
+    var path = poly.getPath(); 
+    while (path.getLength() > 0) { path.pop(); } 
+    for (var i = 0; i < markers.length; i++) { markers[i].setMap(null); } 
+    markers = new Array(); 
+    b_poly = false; 
+    b_s = false; 
+    oldXYL[0] = 0; 
+    oldXYL[1] = 0; 
+    oldXYL[2] = 0; 
+    setID("r_sp", markers.length); 
+    setID("r_distance", 0); 
+    setID("r_distances", 0); 
+   function delLatLng() { 
+    if (b_poly == true || markers.length == 0) { return; } 
+    b_poly = true; 
+    var path = poly.getPath(); 
+    path.pop(); 
+    var i_e = markers.length - 1; 
+    markers[i_e].setMap(null); 
+    markers.pop(); 
+    oldXYL[0] = 0; 
+    oldXYL[1] = 0; 
+    oldXYL[2] = 0; 
+    b_s = false; 
+    var x_l, x_y; 
+    for (var i = 0; i < markers.length; i++) { 
+    x_l = markers[i].getPosition().lat(); 
+    x_y = markers[i].getPosition().lng(); 
+    if (b_s == true) { 
+    oldXYL[2] = oldXYL[2] + getDistance(oldXYL[0], oldXYL[1], x_l, x_y); 
+    } 
+    oldXYL[0] = x_l; 
+    oldXYL[1] = x_y; 
+    b_s = true; 
+
 <blockquote></blockquote>
 <p>返回以下结果：</p>
 
