@@ -1,5 +1,6 @@
  # -*- coding: utf-8 -*- 
 from flask import Flask, render_template, request, escape
+from calcudistance import get_distance
 
 app = Flask(__name__)
 
@@ -10,15 +11,15 @@ def entry_page() -> 'html':
     return render_template('entry.html',
                            the_title='欢迎来到网上查询国内两个机场之间的里程！')
 
-@app.route('/pickcity', methods=['POST'])
-def searchcities() -> 'html':
+@app.route('/pickairport', methods=['POST'])
+def searchairports() -> 'html':
     """提取用户web 请求POST方法提交的数据（输入），不执行任何动作（处理），直接返回（输出）。"""
-    user_placeofdeparture = request.form['user_placeofdeparture']
-    user_destination = request.form['user_destination']
+    airportone = request.form['airportone']
+    airporttwo = request.form['airporttwo']
     return render_template('results.html',
                            the_title = '以下是您选取的机场：',
-                           the_placeofdeparture = user_placeofdeparture,
-                           the_destination = user_destination
+                           the_airportone = airportone,
+                           the_airporttwo = airporttwo
                            )
 
 if __name__ == '__main__':
