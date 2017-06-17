@@ -7,10 +7,22 @@
 <form method='POST' action='/pickairport'>
 <table>
 <th colspan="2">请填写您需要查找的机场名称：</th>
-<tr><td>起始机场: </td><td><input type="text" name="user_placeofdeparture" /></td></tr>
-<tr><td>目的机场: </td><td><input type="text" name="user_destination" /></td></tr>
+<tr><td>起始机场: </td><td><input type="text" name="airportone" placeholder="请输入机场名称"  list="airport" style="width:250px;height:25px" />
+  <datalist id="airport">
+  {% for airport_name in airportsname %}
+    <option value="{{ airport_name }}">
+  {% endfor %}
+<datalist></td></tr>
+  
+<tr><td>目的机场: </td><td><input type="text" name="airporttwo" placeholder="请输入机场名称"  list="airport" style="width:250px;height:25px" />
+  <datalist id="airport">
+  {% for airport_name in airportsname %}
+    <option value="{{ airport_name }}">
+  {% endfor %}
+<datalist></td></tr>
+  
 </table>
-<p>单击此按钮以查询：</p>
+<p>准备就绪后, 单击此按钮：</p>
 <p><input value='查询' type='SUBMIT'></p>
 </form>
 
