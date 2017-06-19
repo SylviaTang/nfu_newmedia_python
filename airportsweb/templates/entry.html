@@ -1,16 +1,19 @@
 {% extends 'base.html' %}
 {% block body %}
+<div style="text-align: center;">
 <h2>{{ the_title }}</h2>
+
 <form method='POST' action='/pickairport'>
-	<table>
-	<th colspan="2">
-		请填写您需要查找的机场名称：
-	</th>
-	<tr>
+		<center><form>
+		<table align="center" th colspan="2">
+			请填写您需要查找的机场名称：
+		</th>
+	<table align="center" th colspan="2">
+	    <tr>
 		<td>
 			起始机场:
 		</td>
-		<td>
+	    <td>
 			<input type="text" name="airportone" placeholder="请输入机场名称" list="airport" style="width:250px;height:25px"/>
 			<datalist id="airport">
   {% for airport_name in airportsname %}
@@ -18,12 +21,12 @@
   {% endfor %}
 			<datalist>
 		</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 		<td>
 			目的机场:
 		</td>
-		<td>
+	    <td>
 			<input type="text" name="airporttwo" placeholder="请输入机场名称" list="airport" style="width:250px;height:25px"/>
 			<datalist id="airport">
   {% for airport_name in airportsname %}
@@ -33,6 +36,7 @@
 		</td>
 	</tr>
 	</table>
+	</form></center>
 	<p>
 		准备就绪后, 单击此按钮：
 	</p>
@@ -40,5 +44,12 @@
 		<input value='查询' type='SUBMIT'>
 	</p>
 </form>
+
+<script>a=new Date();document.write("现在时间是"+a.toLocaleString()+"");</script>
+
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 SIZE=3>
+
+
+<INPUT name=Button onclick="window.external.AddFavorite(location.href, document.title)" type=button value=加入收藏夹>
+
 {% endblock %}
-<a onclick="window.external.AddFavorite(location.href,document.title)" style="cursor:hand;color:blue">加入收藏</a>
