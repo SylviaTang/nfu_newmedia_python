@@ -14,12 +14,12 @@
 			起始机场:
 		</td>
 	    <td>
-			<input type="text" name="airportone" placeholder="请输入机场名称" list="airport" style="width:250px;height:25px"/>
-			<datalist id="airport">
-  {% for airport_name in airportsname %}
-			<option value="{{ airport_name }}">
-  {% endfor %}
-			<datalist>
+		    <select name='user_airportone'>
+		    {% for item in the_list_items %}
+		    <option value="{{item}}">{{item}}</option>
+		    {% endfor %}
+		     </select>
+			
 		</td>
 	    </tr>
 	    <tr>
@@ -27,12 +27,11 @@
 			目的机场:
 		</td>
 	    <td>
-			<input type="text" name="airporttwo" placeholder="请输入机场名称" list="airport" style="width:250px;height:25px"/>
-			<datalist id="airport">
-  {% for airport_name in airportsname %}
-			<option value="{{ airport_name }}">
-  {% endfor %}
-			<datalist>
+		    <select name='user_airporttwo'>
+		    {% for item in the_list_items %}
+		    <option value="{{item}}">{{item}}</option>
+		    {% endfor %}
+		     </select>
 		</td>
 	</tr>
 	</table>
