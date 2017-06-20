@@ -6,7 +6,7 @@ with open('data\gaycone.json', 'r', encoding='utf8') as infile:
 a = calcudistance.airport_list_name()
 a_list = [k for k in dd.keys()]
 
-from flask import Flask, render_template
+from flask import Flask, render_template,request
 
 app = Flask(__name__)
 
