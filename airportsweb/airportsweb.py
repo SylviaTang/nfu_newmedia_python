@@ -6,6 +6,7 @@ with open('data\gaycone.json', 'r', encoding='utf8') as infile:
 a = calcudistance.airport_list_name()
 a_list = [k for k in dd.keys()]
 
+from TEST import get_distance
 from flask import Flask, render_template,request
 
 app = Flask(__name__)
@@ -21,10 +22,13 @@ def entry_page() -> 'html':
 def searchairports() -> 'html':
     airportone = request.form['user_airportone']
     airporttwo = request.form['user_airporttwo']
+    results = get_distance(airportone,airporttwo)
     return render_template('results.html',
                            the_title = '以下是您选取的机场：',
+                           the_results=results,
                            the_airportone = airportone,
-                           the_airporttwo = airporttwo
+                           the_airporttwo = airporttwo,
+                           the_distance = results
                            )
 
 if __name__ == '__main__':
