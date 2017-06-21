@@ -15,7 +15,7 @@ def haversine(lon1, lat1, lon2, lat2): # 经度1，纬度1，经度2，纬度2 �
     a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2  
     c = 2 * asin(sqrt(a))   
     r = 6371 # 地球平均半径，单位为公里  
-    return c * r * 1000
+    return c * r 
 
 def get_latlon(airport):
     lat_lon = []
@@ -31,7 +31,7 @@ def get_distance(airport1,airport2):
     a1 = get_latlon(airport1)
     a2 = get_latlon(airport2)
     distance = haversine(a1[1],a1[0],a2[1],a2[0])
-    return str(distance) + ' m'
+    return str(distance) + ' km'
     
 test = get_distance('北京首都国际机场','北京西郊机场')
 print(test)
