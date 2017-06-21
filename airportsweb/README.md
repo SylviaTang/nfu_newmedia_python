@@ -1,5 +1,5 @@
 airportsweb
-英文项目名称airportsweb，意思为机场网页。
+英文项目名称airportsweb
 
 
 # 简介 
@@ -28,9 +28,9 @@ airportsweb
 
 2. 前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
 
-3. 後端伺服器web 响应：[pick_a_zb_meta.py](airportsweb.py) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](templates/entry.html)及一个机场名称的字典（见代码 the_list_items = a_list）产出的产生《欢迎使用查询国内两个机场之间里程之工具》的HTML页面
+3. 後端伺服器web 响应：[airportsweb.py](airportsweb.py) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](templates/entry.html)及一个机场名称的字典（见代码 the_list_items = a_list）产出的产生《欢迎使用查询国内两个机场之间里程之工具》的HTML页面
 
-4. 前端浏览器收到web 响应：出现HTML页面有HTML表单的变数名称(name)为'user_airportone'，使用了HTML的selec，详见HTML模版[templates/entry.html](templates/entry.html)
+4. 前端浏览器收到web 响应：出现HTML页面有HTML表单的变数名称(name)为'user_airportone'和'user_airporttwo'，使用了HTML的select，详见HTML模版[templates/entry.html](templates/entry.html)
 
 5. 前端浏览器web 请求：用户选取指标後按了提交钮「查询」，则产生新的web 请求，按照form元素中定义的method='POST' action='/pickairport'，以POST为方法，动作为/pickairport的web 请求
 
