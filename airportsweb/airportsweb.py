@@ -3,7 +3,7 @@ import airportnames
 import json
 with open('data\gaycone.json', 'r', encoding='utf8') as infile:
            dd = json.load (infile)
-a = calcudistance.airport_list_name()
+a = airportnames.airport_list_name()
 a_list = [k for k in dd.keys()]
 
 from TEST import get_distance
