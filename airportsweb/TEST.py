@@ -31,7 +31,7 @@ def get_distance(airport1,airport2):
     a1 = get_latlon(airport1)
     a2 = get_latlon(airport2)
     distance = haversine(a1[1],a1[0],a2[1],a2[0])
-    return str(distance) + ' km'
+    return str("%.2f" %distance) + ' km'
     
 test = get_distance('北京首都国际机场','北京西郊机场')
 print(test)
