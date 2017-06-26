@@ -6,16 +6,16 @@
 <form method='POST' action='/pickairport'>
 <table>
 <th colspan="2">请填写机场名称：</th>
-<tr><td>起始机场: </td><td>
-  <select name='user_airportone'>
+<tr><td>起始机场: </td><td><input type="text" list="airporta" name='user_airportone'>
+ <datalist id="airporta">
   {% for item in the_list_items %}
     <option value="{{item}}">{{item}}</option>
   {% endfor %}
   </select>
 </td></tr>
 
-<tr><td>目的机场: </td><td>
- <select name='user_airporttwo'>
+<tr><td>目的机场: </td><td><input type="text" list="airportb" name='user_airporttwo'>
+<datalist id="airportb">
   {% for item in the_list_items %}
     <option value="{{item}}">{{item}}</option>
   {% endfor %}
