@@ -5,7 +5,7 @@ read_airport_name.md
 
 
 # 中文翻译
->>> 识别、类型（规模）、名称、坐标、海拔（英尺），所在洲，国家，地区（码），直辖市，gps_code，iata_code，local_code
+>>> 识别、类型（规模）、名称、坐标、海拔（米），所在洲，国家，地区（码），直辖市，gps_code，iata_code，local_code
 
 
 # 例子
