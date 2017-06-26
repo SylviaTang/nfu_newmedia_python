@@ -34,5 +34,4 @@ def get_distance(airport1,airport2):
     return str(distance) + ' km'
     
 test = get_distance('北京首都国际机场','北京西郊机场')
-test = 30920.54884868882
 print("%.2f" %test)
