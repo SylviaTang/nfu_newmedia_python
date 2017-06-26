@@ -1,5 +1,5 @@
  # -*- coding: utf-8 -*- 
-import calcudistance  
+import airportnames  
 import json
 with open('data\gaycone.json', 'r', encoding='utf8') as infile:
            dd = json.load (infile)
