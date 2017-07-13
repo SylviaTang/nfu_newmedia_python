@@ -15,7 +15,7 @@ airportsweb
 ### 模块
 * [json](http://www.json.org/)
 ### 数据
-* [世界机场数据](https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv)
+* [世界机场数据](https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv) 非原创，取自github用户：Mikanebu  的datasets/airport-codes
 * [gaycone.json](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/data/gaycone.json)
 ### API
 无
