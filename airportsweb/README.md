@@ -1,5 +1,6 @@
 airportsweb
-英文项目名称airportsweb
+
+英文项目名称airportsweb，airports指两个机场,web意思为网页，就是指查询两个机场里程的一个网页
 
 
 # 简介 
@@ -8,15 +9,17 @@ airportsweb
 
 
 ## 输入：
-用户输入国内两个机场名称，交互界面使用到HTML之[select](http://www.w3school.com.cn/tags/tag_select.asp)标签，显示的是机场名称，所以用户可以用 机场代码 的片段找所需要的机场。
+用户输入国内两个机场名称，交互界面使用到HTML之[select](http://www.w3school.com.cn/tags/tag_select.asp)标签，显示的是机场名称，所以用户可以用 机场名称 的片段找所需要的机场。详细见[templates/entry.html](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/templates/entry.html)
 ## 输出：
 用户得到输出结果为：起始机场，目的机场，里程，见[tempaltes/results.html](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/templates/results.html)模版中table标签所包的3项数据
 ## 从输入到输出，除了flask模块，本组作品还使用了：
 ### 模块
 * [json](http://www.json.org/)
 ### 数据
-* [世界机场数据](https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv)
-* [gaycone.json](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/data/gaycone.json)
+* 数据来源：[世界机场数据](https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv) 非原创，取自github用户：Mikanebu  的datasets/airport-codes/data/airport-codes.csv
+* 资料类型：csv
+* 数据清理：清除无用的数据，保留经纬度并翻译出机场名称
+* 最终数据：[gaycone.json](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/data/gaycone.json) 机场经纬度文件
 ### API
 无
 
