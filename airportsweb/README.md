@@ -17,9 +17,9 @@ airportsweb
 * [json](http://www.json.org/)
 ### 数据
 * 数据来源：[世界机场数据](https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv) 非原创，取自github用户：Mikanebu  的datasets/airport-codes/data/airport-codes.csv
-* 资料类型：csv
 * 数据清理：清除无用的数据，保留经纬度并翻译出机场名称
 * 最终数据：[gaycone.json](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/data/gaycone.json) 机场经纬度文件
+* 资料类型：json
 ### API
 无
 
