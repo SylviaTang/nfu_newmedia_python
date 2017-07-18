@@ -37,7 +37,7 @@ airportsweb
 
 5. 前端浏览器web 请求：用户选取指标後按了提交钮「查询」，则产生新的web 请求，按照form元素中定义的method='POST' action='/pickairport'，以POST为方法，动作为/pickairport的web 请求
 
-6. 後端服务器收到用户web 请求，匹配到@app.route('/pickairpor', methods=['POST'])的函数 searchairports() 
+6. 後端服务器收到用户web 请求，匹配到@app.route('/pickairport', methods=['POST'])的函数 searchairports() 
 
 7. [airportsweb.py](airportsweb.py) 中 def searchairports() 函数，把用户提交的数据，以flask 模块request.form['user_airportone'],request.form['user_airporttwo']	取到Web 请求中，HTML表单变数名称airportone的值，存放在user_airportone这Python变数下以及airporttwo的值，存放在user_airporttwo这Python变数下。再使用flask模块render_template 函数以[templates/results.html](templates/results.html)模版为基础（输出），其中模版中the_airportone的值，用airportone这变数之值以及the_airporttwo的值，用airporttwo这变数之值。还有，results从TEST.py中函数get_distance获得，the_distance的值用results之值。
 
