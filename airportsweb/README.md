@@ -4,7 +4,7 @@ airportsweb
 
 
 # 简介 
-计算国内两个机场之间的里程，输入方面用户可输进机场名称中任意一个字，挑选出国内所有机场中包含这个字的机场，输出方面则是输出两个机场之间的里程，数据来源为[airports-codes.csv](https://github.com/datasets/airport-codes/tree/master/data)
+计算中国国内两个机场之间的里程，输入方面用户可输入机场名称中的任意一个字，（如：输入“广”，即可出现“广州白云国际机场”等，内含有“广”字的机场名称），即可挑选出国内所有机场中包含这个字的机场，输出方面则是输入方面中挑选出来的两个机场之间的里程，数据来源为[airports-codes.csv](https://github.com/datasets/airport-codes/tree/master/data)
 
 
 
