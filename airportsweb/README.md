@@ -11,7 +11,7 @@ airportsweb
 ## 输入：
 用户输入国内两个机场名称，交互界面使用到HTML之[select](http://www.w3school.com.cn/tags/tag_select.asp)标签，显示的是机场名称，所以用户可以用 机场名称 的片段找所需要的机场。详细见[templates/entry.html](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/templates/entry.html)
 ## 输出：
-用户得到输出结果为：起始机场，目的机场，里程，见[templates/results.html](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/templates/results.html)模版中table标签所包的3项数据![输出](输出.JPG)
+用户得到输出结果为：起始机场，目的机场，里程共3项数据，见[templates/results.html](https://github.com/SylviaTang/nfu_newmedia_python/blob/master/airportsweb/templates/results.html)模版中table标签所包含的3项数据![输出](输出.JPG)
 ## 从输入到输出，除了flask模块，本组作品还使用了：
 ### 模块
 * [json](http://www.json.org/)
