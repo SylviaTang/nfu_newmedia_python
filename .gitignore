@@ -53,3 +53,6 @@ __pycache__
 # Files
 *.log created by Python runtime
 
+# data files for 一G
+airport-codes.csv
+gaycone.json
