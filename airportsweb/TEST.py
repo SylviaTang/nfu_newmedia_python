@@ -19,7 +19,7 @@ def haversine(lon1, lat1, lon2, lat2): # 经度1，纬度1，经度2，纬度2 �
 
 def get_latlon(airport):
     lat_lon = []
-    with open('data\gaycone.json', 'r', encoding='utf8') as infile:
+    with open('data\Airports_zh_code_geo.json', 'r', encoding='utf8') as infile:
         dd = json.load (infile)
         for k,v in dd.items():
             if k == airport:
@@ -33,5 +33,5 @@ def get_distance(airport1,airport2):
     distance = haversine(a1[1],a1[0],a2[1],a2[0])
     return str("%.2f" %distance) + ' km'
     
-test = get_distance('1','1')
+test = get_distance('\u961c\u9633\u897f\u5173\u673a\u573a ','\u6885\u5dde\u6885\u53bf\u673a\u573a ')
 print(test)
