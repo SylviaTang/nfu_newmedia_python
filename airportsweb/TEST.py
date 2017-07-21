@@ -33,5 +33,5 @@ def get_distance(airport1,airport2):
     distance = haversine(a1[1],a1[0],a2[1],a2[0])
     return str("%.2f" %distance) + ' km'
     
-test = get_distance('\u961c\u9633\u897f\u5173\u673a\u573a ','\u6885\u5dde\u6885\u53bf\u673a\u573a ')
+test = get_distance('1','1')
 print(test)
