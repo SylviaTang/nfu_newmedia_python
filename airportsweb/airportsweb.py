@@ -1,7 +1,7 @@
  # -*- coding: utf-8 -*- 
 import airportnames  
 import json
-with open('data\gaycone.json', 'r', encoding='utf8') as infile:
+with open('data\Airports_zh_code_geo.json', 'r', encoding='utf8') as infile:
            dd = json.load (infile)
 a = airportnames.airport_list_name()
 a_list = [k for k in dd.keys()]
