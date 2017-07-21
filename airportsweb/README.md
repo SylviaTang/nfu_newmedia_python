@@ -29,6 +29,8 @@ airportsweb
 
 以下按web 请求（web request） - web 响应 时序说明
 
+Web App动作所需数据的的处理的动作描述：先导入os和json两个模块，打开data目录下的airport_zh.json，然后输出到数据。然后重新加载一次之前运行过的模块，再把reload上的数据赋值到dict_c_n上。接下来导入csv模块，通过row函数等处理原airport-codes.csv得出新的数据，再输出data内的数据、输出data数据中的值、输出dict_c_n数据中的值、打印出dict_c_n和data中的数据总量。再取dict_c_n的值和data的值的交集生成一个集合，通过生成特定格式的的字典的办法赋值到data_output下，导入json和os.path模块再输出保存到Airports_zh_code_geo.json下。最终得到web app所需的准备数据。
+
 1. 後端伺服器启动：执行 [airportsweb.py](airportsweb.py) 启动後端伺服器，等待web 请求。启动成功应出现：  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 2. 前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
