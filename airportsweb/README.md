@@ -15,6 +15,8 @@ airportsweb
 ## 从输入到输出，除了flask模块，本组作品还使用了：
 ### 模块
 * [json](http://www.json.org/)
+* [os.path]( )
+* [csv]( )
 ### 数据
 * 数据来源：[世界机场数据](https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv) 非原创，取自github用户：Mikanebu  的[datasets/airport-codes/data/airport-codes.csv](https://github.com/datasets/airport-codes/blob/master/data)
 * 数据清理：清除无用的数据，保留经纬度并由组员yaneziwaii翻译出机场名称
